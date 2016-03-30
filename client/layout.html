@@ -1,0 +1,24 @@
+<template name="AppLayout">
+
+	<div class="container">
+
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+					<li role="presentation"><a href="/">Home</a></li>
+					<li role="presentation"><a href="/posts">All Posts</a></li>
+					<li role="presentation"><a href="/posts/1">Single Post</a></li>
+				</ul>
+			</nav>
+			<h3 class="text-muted"><a href="/">Funny or Not?</a></h3>
+		</div>
+
+      {{> yield}}
+
+      <footer class="footer">
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+    
+  </div>
+
+</template>
